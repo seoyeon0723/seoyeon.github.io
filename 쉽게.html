@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>윤동주</title>
+	<style>
+        *{margin: 0; padding: 0;}
+
+		body{
+			background-image: url('밤하늘.jpg');
+			background-repeat: no-repeat;
+			background-position: left top;
+			background-size: cover;
+			background-attachment: fixed;
+            margin: 30px;
+		}
+
+        ul{list-style: none;}
+        a{text-decoration: none; color: black; display: block;}
+
+        .top_menu{
+            width: 25%;
+            height: 10%;
+            background-color: rgb(245, 245, 245);
+            float: right;
+            text-align: center;
+            font: 900 20px/50px'';
+            transition-duration: 0.5s;
+        }
+
+        .sub_menu{
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            background-color: rgb(241, 241, 241);
+            transition-duration: 0.5s;
+        }
+
+        .sub_menu>li{
+            width: 100%;
+            height: 100px;
+            border-bottom: 1px solid rgb(192, 192, 192);
+            box-sizing: border-box;
+            font: 500 18px/100px '';
+			text-align: center;
+        }
+
+        .top_menu.top_menu:hover{
+            background-color: gray;
+        }
+
+        .top_menu:hover>.sub_menu{
+            height: 300px;
+        }
+
+        .sub_menu>li:hover{
+            background-color: gray;
+            transition-duration: 0.5s;
+        }
+        button{
+            position: relative;
+            left: 5%;
+        }
+        .write{
+            background-color: white;
+            text-align: center;
+            margin: 10px 100px 10px 100px;
+            padding: 50px 100px 50px 100px;
+        }
+    </style>
+</head>
+
+<body>
+	<ul>
+        <li class="top_menu">
+            <a href="list.html">작품 목록</a>
+            <ul class="sub_menu">
+                <li><a href="서시.html">서시</a></li>
+                <li><a href="별헤는밤.html">별 헤는 밤</a></li>
+                <li><a href="쉽게.html">쉽게 씌어진 시</a></li>
+            </ul>
+        </li>
+
+        <li class="top_menu">
+            <a href="life.html">일생</a>
+        </li>
+
+        <li class="top_menu">
+            <a href="intro.html">소개</a>
+        </li>
+    </ul>
+    
+    <button type="button" onclick="location.href='main.html'"><img src="로고.png" alt=""></button>
+
+    <div class="write">
+        <h1>쉽게 씌어진 시</h1>
+        <br>
+        <hr>
+        <br>
+        <p>창 밖에 밤비가 속살거려</p>
+        <p>육첩방은 남의 나라,</p>
+        <br>
+        <p>시인이란 슬픈 천명인 줄 알면서도</p>
+        <p>한 줄 시를 적어 볼까,</p>
+        <br>
+        <p>땀내와 사랑내 포근히 품긴</p>
+        <p>보내 주신 학비 봉투를 받아</p>
+        <br>
+        <p>대학 노-트를 끼고</p>
+        <p>늙은 교수의 강의 들으러 간다.</p>
+        <br>
+        <p>생각해 보면 어린 때 동무를</p>
+        <p>하나, 둘, 죄다 잃어버리고</p>
+        <br>
+        <p>나는 무얼 바라</p>
+        <p>나는 다만, 홀로 침전하는 것일까?</p>
+        <br>
+        <p>인생은 살기 어렵다는데</p>
+        <p>시가 이렇게 쉽게 쓰여지는 것은</p>
+        <p>부끄러운 일이다.</p>
+        <br>
+        <p>육첩방은 남의 나라,</p>
+        <p>창 밖에 밤비가 속살거리는데,</p>
+        <br>
+        <p>등불을 밝혀 어둠을 조금 내몰고,</p>
+        <p>시대처럼 올 아침을 기다리는 최후의 나,</p>
+        <br>
+        <p>나는 나에게 작은 손을 내밀어</p>
+        <p>눈물과 위안으로 잡는 최초의 악수.</p>
+    </div>
+  </body>
+ </html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>윤동주</title>
+	<style>
+        *{margin: 0; padding: 0;}
+
+		body{
+			background-image: url('밤하늘.jpg');
+			background-repeat: no-repeat;
+			background-position: left top;
+			background-size: cover;
+			background-attachment: fixed;
+            margin: 30px;
+		}
+
+        ul{list-style: none;}
+        a{text-decoration: none; color: black; display: block;}
+
+        .top_menu{
+            width: 25%;
+            height: 10%;
+            background-color: rgb(245, 245, 245);
+            float: right;
+            text-align: center;
+            font: 900 20px/50px'';
+            transition-duration: 0.5s;
+        }
+
+        .sub_menu{
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            background-color: rgb(241, 241, 241);
+            transition-duration: 0.5s;
+        }
+
+        .sub_menu>li{
+            width: 100%;
+            height: 100px;
+            border-bottom: 1px solid rgb(192, 192, 192);
+            box-sizing: border-box;
+            font: 500 18px/100px '';
+			text-align: center;
+        }
+
+        .top_menu.top_menu:hover{
+            background-color: gray;
+        }
+
+        .top_menu:hover>.sub_menu{
+            height: 300px;
+        }
+
+        .sub_menu>li:hover{
+            background-color: gray;
+            transition-duration: 0.5s;
+        }
+        button{
+            position: relative;
+            left: 5%;
+        }
+        .intro{
+            background-color: white;
+            text-align: center;
+            margin: 10px 100px 10px 100px;
+            padding: 50px 100px 400px 100px;
+        }
+    </style>
+</head>
+
+<body>
+	<ul>
+        <li class="top_menu">
+            <a href="list.html">작품 목록</a>
+            <ul class="sub_menu">
+                <li><a href="서시.html">서시</a></li>
+                <li><a href="별헤는밤.html">별 헤는 밤</a></li>
+                <li><a href="쉽게.html">쉽게 씌어진 시</a></li>
+            </ul>
+        </li>
+
+        <li class="top_menu">
+            <a href="life.html">일생</a>
+        </li>
+
+        <li class="top_menu">
+            <a href="intro.html">소개</a>
+        </li>
+    </ul>
+    
+    <button type="button" onclick="location.href='main.html'"><img src="로고.png" alt=""></button>
+
+    <div class="intro">
+        <p>윤동주는 독립투쟁의 일선에서 장렬하게 산화한 투사도 아니었고, 당대에 이름이 널리 알려진 시인도 아니었다. 그러나 인간을 떠나서 도를 닦는다는 것은 한낱 오락에 불과하고, 공부나 시도 생활이 되어야 한다며, 자신의 시와 삶을 일치시키려 “잎새에 이는 바람에도” 괴로워했던 그의 시 정신은 어느 투사 못지 않게 치열한 바가 있었다. “별을 노래하는 마음으로 / 모든 죽어가는 것을 사랑해야지 / 그리고 나한테 주어진 길을 / 걸어가야겠다”는 <서시>의 구절처럼, 그는 모진 풍파 속에서도 독립한 나라를 희망하는 마음으로 죽음의 나락에 빠진 민족을 사랑했고, 자신한테 주어진 길을 걸어가며 한 몸을 민족의 제단에 제물로 바쳤다.
+           <br><br><br>
+            [네이버 지식백과] 윤동주 [尹東柱] - 순결한 희망 (독립운동가, 장규식, 이달의 독립운동가)</p>
+    </div>
+  </body>
+ </html>

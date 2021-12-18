@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>윤동주</title>
+	<style>
+        *{margin: 0; padding: 0;}
+
+		body{
+			background-image: url('밤하늘.jpg');
+			background-repeat: no-repeat;
+			background-position: left top;
+			background-size: cover;
+			background-attachment: fixed;
+            margin: 30px;
+		}
+
+        ul{list-style: none;}
+        a{text-decoration: none; color: black; display: block;}
+
+        .top_menu{
+            width: 25%;
+            height: 10%;
+            background-color: rgb(245, 245, 245);
+            float: right;
+            text-align: center;
+            font: 900 20px/50px'';
+            transition-duration: 0.5s;
+        }
+
+        .sub_menu{
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            background-color: rgb(241, 241, 241);
+            transition-duration: 0.5s;
+        }
+
+        .sub_menu>li{
+            width: 100%;
+            height: 100px;
+            border-bottom: 1px solid rgb(192, 192, 192);
+            box-sizing: border-box;
+            font: 500 18px/100px '';
+			text-align: center;
+        }
+
+        .top_menu.top_menu:hover{
+            background-color: gray;
+        }
+
+        .top_menu:hover>.sub_menu{
+            height: 300px;
+        }
+
+        .sub_menu>li:hover{
+            background-color: gray;
+            transition-duration: 0.5s;
+        }
+        button.back{
+            position: relative;
+            left: 5%;
+        }
+        .home{
+            background-color: white;
+            text-align: center;
+            margin: 10px 100px 10px 100px;
+            padding: 50px 100px 50px 100px;
+        }
+        .love{
+            font-family: "휴먼편지체";
+        }
+    </style>
+</head>
+
+<body>
+	<ul>
+        <li class="top_menu">
+            <a href="list.html">작품 목록</a>
+            <ul class="sub_menu">
+                <li><a href="서시.html">서시</a></li>
+                <li><a href="별헤는밤.html">별 헤는 밤</a></li>
+                <li><a href="쉽게.html">쉽게 씌어진 시</a></li>
+            </ul>
+        </li>
+
+        <li class="top_menu">
+            <a href="life.html">일생</a>
+        </li>
+
+        <li class="top_menu">
+            <a href="intro.html">소개</a>
+        </li>
+    </ul>
+    
+    <button class="back" type="button" onclick="location.href='main.html'"><img src="로고.png" alt=""></button>
+
+    <div class="home">
+        <img src="윤동주.jpg" alt="">
+        
+        <p class="love"><br> "별을 노래하는 마음으로 <br> 모든 죽어가는 것을 사랑해야지"
+        <br>
+        윤동주, 서시 中
+        </p>
+        <br><br>
+        <button type="button" onclick="location.href='intro.html'"><img src="소개.png" alt=""></button>
+        <p>윤동주가 어떤 인물이었는지에 대해 간략히 소개함</p>
+        <br><br>
+        <button type="button" onclick="location.href='life.html'"><img src="일생.png" alt=""></button>
+        <p>윤동주의 일생을 정리함</p>
+        <br><br>
+        <button type="button" onclick="location.href='list.html'"><img src="작품목록.png" alt=""></button>
+        <p>윤동주의 작품을 나열하고
+            <br>
+            <서시>, <별 헤는 밤>, <쉽게 씌어진 시>의 전문을 옮김
+        </p>
+    </div>
+  </body>
+ </html>
